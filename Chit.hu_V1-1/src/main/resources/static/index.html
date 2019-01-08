@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+  		<link rel="stylesheet" href="styles/loader.css">
+        <link rel="stylesheet" href="vendors/material-design-icons/iconfont/material-icons.css" rel="stylesheet" >
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <!-- end Needs images -->
+		<link rel="stylesheet" href="styles/main.css">
   
+  <!-- ////////////////////////////////////////////////////////////////////////////////////  -->
    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="css/heroic-features.css" rel="stylesheet">
+    <!-- <link href="css/heroic-features.css" rel="stylesheet"> -->
     
-     <script src="css/jquery/jquery.min.js"></script>
-    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script> -->
+
     
 
   <script src="js/lib/angular/angular.min.js"></script>
@@ -27,12 +35,13 @@
   <script src="js/controllers/DashboardController.js"></script>
   <script src="js/controllers/GroupCreationController.js"></script>
   <script src="js/controllers/viewTransController.js"></script>
+  <script src="js/controllers/addpeopleController.js"></script>
 
 </head>
 <body ng-controller="RegistrationController">
 
 	<header ng-show=noUser>
-  		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style= "height:10%">
+  		<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style= "height:10%">
       <div class="container">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +59,10 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
   </header>
   <header ng-show=loggedUser>
-  		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style= "height:10%">
+  		<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style= "height:10%">
       <div class="container">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,12 +90,12 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
   </header>
 <!-- <header>
   <nav class="cf" ng-hide=""ng-include="'views/nav.html'"></nav>
 </header> -->
-<div class="page">
+<div class="container">
 
   <!-- <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
     <span class="userinfo">Hi {{currentUser.firstname}}</span>

@@ -13,11 +13,11 @@ var myApp = angular.module('myApp',
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
     when('/login', {
-      templateUrl: 'views/login.html',
+      templateUrl: 'views/sigin.html',
       controller: 'RegistrationController'
     }).
     when('/register', {
-      templateUrl: 'views/register.html',
+      templateUrl: 'views/signup.html',
       controller: 'RegistrationController'
     }).
     when('/success', {
@@ -35,6 +35,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
     when('/viewtrans',{
     	templateUrl: 'views/viewtrans.html',
     	controller : 'viewTransController'
+    }).
+    when('/forwpas',{
+    	templateUrl : 'views/forgot-password.html',
+    	controller : 'RegistrationController'
     }).
     otherwise({
       redirectTo: '/login'
